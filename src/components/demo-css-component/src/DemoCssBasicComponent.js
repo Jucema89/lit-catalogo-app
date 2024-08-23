@@ -17,7 +17,22 @@ export class DemoCssBasicComponent extends LitElement {
 
   render() {
     return html`
-    <empty-template-component></empty-template-component>
+    <h2>Css Basico</h2>
+    <p>
+      Los estilos se agregan automaticamente al scope del shadow-root
+    </p>
+    
+    <deckgo-highlight-code language="javascript">
+      <code slot="code">
+      export class DemoModalComponent extends LitElement {
+        static styles = css'
+        p {
+          color: green;
+        }
+        '
+      }
+      </code>
+    </deckgo-highlight-code>
     `;
   }
 }

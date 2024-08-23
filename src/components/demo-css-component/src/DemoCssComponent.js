@@ -28,7 +28,10 @@ export class DemoCssComponent extends LitElement {
     const components = {
       1: html`<css-basic-component></css-basic-component>`,
       2: html`<css-intermediate-component></css-intermediate-component>`,
-      3: html`<css-advanced-component></css-advanced-component>`
+      3: html`
+      <div class="dark-theme">
+        <css-advanced-component></css-advanced-component>
+      </div>`
     }
     return components[id]
   }

@@ -20,7 +20,6 @@ export class EmptyTemplateComponent extends LitElement {
           height: auto
         }
       }
-      
     }`
   ];
 
@@ -44,3 +43,4 @@ export class EmptyTemplateComponent extends LitElement {
 }
 
 customElements.define('empty-template-component', EmptyTemplateComponent);
+

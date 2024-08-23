@@ -18,6 +18,7 @@ export class DemoCssIntermediateComponent extends LitElement {
   render() {
     return html`
     <h2>CSS Intermedio</h2>
+    <empty-template-component></empty-template-component>
     `;
   }
 }

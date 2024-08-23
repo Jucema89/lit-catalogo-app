@@ -6,7 +6,8 @@ import { css } from "lit";
 export const blockComponentRender = css`
   :host {
     display: block;
-    background-color: white;
+    background-color: var(--background-color, white);
+    color: var(--color-text, black);
     padding: 16px;
     border-radius: 8px;
   }
@@ -16,13 +17,14 @@ export const blockComponentRender = css`
 export const templateTitle = css`
   :host{
     .header {
-
+     
     }
   }
 `
 
 export const templateStyles = css`
     :host {
+      
       .container {
         display: flex;
         flex-direction: column;
@@ -30,15 +32,22 @@ export const templateStyles = css`
         padding: 1rem;
         flex-wrap: nowrap;
         align-items: center;
+        height: 100vh;
+        width: 80vw;
+        overflow: hidden;
 
         .header{
           display: flex;
-          flex-direction: row
+          flex-wrap: nowrap;
+          align-items: center;
+          justify-content: start;
+          width: 100;
+          gap: 1rem;
 
           h1 {
             text-align: center;
             font-size: 1.5rem;
-            color: #333;
+            color: var(--color-text, black);
             font-weight: 500;
           }
         }
@@ -66,8 +75,8 @@ export const templateStyles = css`
               a {
                 display: flex;
                 flex-direction: row;
-                background-color: #fff;
-                color: #000;
+                background-color: var(--background-color, white);
+                color: var(--color-text, black);
                 padding: 1rem 2rem;
                 border-radius: 15px;
                 width: 200px;

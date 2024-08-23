@@ -4,7 +4,13 @@ import { blockComponentRender } from '../../content-template-component/src/style
 export class DemoCssAdvancedComponent extends LitElement {
   static styles = [
     blockComponentRender,
-    css``]
+    css`
+    :host-context(.dark-theme){
+      background-color: darkblue;
+      color: white;
+    }
+    
+    `]
   ;
 
   static properties = {
@@ -18,6 +24,7 @@ export class DemoCssAdvancedComponent extends LitElement {
   render() {
     return html`
       <h2>CSS avanzado</h2>
+      <p>Contextual Style example</p>
     `;
   }
 }
