@@ -1,5 +1,6 @@
 import { html, css, LitElement } from 'lit';
 import { blockComponentRender } from '../../content-template-component/src/styles';
+import '../../empty-template-component/src/EmptyTemplateComponent.js'
 
 export class DemoCssBasicComponent extends LitElement {
   static styles = [
@@ -16,7 +17,7 @@ export class DemoCssBasicComponent extends LitElement {
 
   render() {
     return html`
-    <h2>CSS Basico</h2>
+    <empty-template-component></empty-template-component>
     `;
   }
 }
